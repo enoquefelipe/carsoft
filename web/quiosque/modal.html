@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Modal </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/bootstrap-theme.css" type="text/css" />
+        <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+    </head>
+    <body>
+
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Monte o Seu 
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel"><b> Escolha acessórios para seu KIT </b></h4>
+                    </div>
+
+                    <!-- Formulario -->
+
+                    <p>&nbsp;</p>
+
+                    <div class="row">
+
+                        <div class="col-sm-1"> </div>
+
+                        <div class="col-sm-10">
+                            <div class="form-horizontal">
+
+                                <div class="checkbox-inline">
+                                    <label>
+                                        <input type="checkbox" value="" id="item1" onclick="value='AR-CONDICIONADO';" />
+                                        AR-CONDICIONADO
+                                    </label>
+                                </div>
+
+                                <div class="checkbox-inline">
+                                    <label>
+                                        <input type="checkbox" value="" id="item2"  onclick="value='DIREÇÃO HIDRÁULICA';" />
+                                        DIREÇÃO HIDRÁULICA
+                                    </label> 
+                                </div>
+
+                                <div class="checkbox-inline">
+                                    <label>
+                                        <input type="checkbox" value="" id="item3" onclick="value='TRAVA ELÉTRICA';"/>
+                                       TRAVA ELÉTRICA 
+                                    </label> 
+                                </div>
+
+                                <div class="checkbox-inline">
+                                    <label>
+                                        <input type="checkbox"  value="" id="item4" onclick="value='VIDRO ELÉTRICO';" />
+                                        VIDRO ELÉTRICO
+                                    </label>
+                                </div>
+
+                                <div class="checkbox-inline">
+                                    <label>
+                                        <input type="checkbox" value=""  id="item5" onclick="value='ALARME';"/>
+                                        ALARME 
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim Formulario -->
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"> Cancelar </button>
+                        <button type="button" class="btn btn-primary" id="save-btn" value="Salvar"> Salvar </button>                      
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="resultadokit"> </div>
+
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/kit.js"></script>
+
+    </body>
+</html>

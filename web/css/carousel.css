@@ -1,0 +1,119 @@
+img{
+    width: 200px;
+    border: none;
+}
+body {
+    font-family:Arial;
+    font-size:12px;
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    padding-top: 15px;
+}
+.example-desc {
+    margin:3px 0;
+    padding:5px;
+}
+
+#carousel {
+
+    width:960px;
+    /* border:1px solid #222;  */
+    height:300px;
+    position:relative;
+    clear:both;
+    overflow:hidden;
+    /*background-color: #4b67a1;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+#carousel img {
+    visibility:hidden; /* hide images until carousel can handle them */
+    cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+}
+
+.split-left {
+    width:450px;
+    float:left;
+}
+.split-right {
+    width:400px;
+    float:left;
+    margin-left:10px;
+}
+#callback-output {
+    height:250px;
+    overflow:scroll;
+}
+textarea#newoptions {
+    width:430px;
+}
+
+.carousel-controls {
+    position: relative;
+    margin-top: -170px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+}
+
+.carousel-controls a {
+    display: block;
+}
+
+.prev-button {
+    position: absolute;
+    left: 0;
+}
+
+.next-button {
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+/*##### ICONS #####*/
+div.icon {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    margin: 15px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* Pointer Left */
+div.icon div.pointerLeft {
+    width: 20px;
+    height: 20px;
+    border: solid darkgray;
+    border-width: 6px 6px 0 0;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    margin: 8px 0 0 5px;
+}
+
+/* Pointer Right */
+div.icon div.pointerRight {
+    width: 20px;
+    height: 20px;
+    border: solid darkgray;
+    border-width: 6px 6px 0 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 8px 0 0 5px;
+}
+
+
+

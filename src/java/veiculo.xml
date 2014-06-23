@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="default" extends="struts-default">
+        
+        <action name="cadastravei" class="br.carsoft.action.ActionVeiculo" method="cadastra">
+            <result name="Cadastrado" type="redirectAction">lista.action</result>
+        </action>
+        
+        <action name="lista" class="br.carsoft.action.ActionVeiculo" method="lista">
+            <result name="Lista">/admin/listaVeiculo.jsp</result>
+        </action>
+        
+        <action name="removecar" class="br.carsoft.action.ActionVeiculo" method="remove" >
+            <result name="Delete" type="redirectAction">lista.action</result>
+        </action>
+        
+        <action name="prepara" class="br.carsoft.action.ActionVeiculo"  method="prepara">
+            <result name="prepara">/admin/editaVeiculo.jsp</result>
+        </action>  
+        
+        <action name="edit" class="br.carsoft.action.ActionVeiculo" method="edita">
+            <result name="editado" type="redirectAction">lista.action</result>
+        </action>
+    </package>
+</struts>

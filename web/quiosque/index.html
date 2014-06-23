@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="../css/bootstrap-theme.css" type="text/css" />
+        <link rel="stylesheet" href="../css/kioskStyle.css" type="text/css" />
+        <link rel="stylesheet" href="../css/carousel.css" type="text/css" />
+        <style> 
+            #btn-voltar{
+                text-align: left;
+                padding-top: 200px;
+                margin-left: 10px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="div" id="container-quiosque-index">
+
+            <div  class="div"  id="div1"> 
+                <a href="#div2">
+                    <img id="botao-montar-veiculo" src="../img/monteoseu.png" alt="botao montar">
+                </a>
+            </div>
+
+            <div class="div" id="div2">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="carousel">
+                            <a href="pesquisaVeiculo?montadora=volkswagen"> <img src="../img/1.png" id="item-1" alt="vox"/></a>
+                            <a href="pesquisaVeiculo?montadora=fiat">       <img src="../img/2.png" id="item-2" alt="fiat"/></a>
+                            <a href="pesquisaVeiculo?montadora=ford">       <img src="../img/3.png" id="item-3" alt="ford"/></a>
+                            <a href="pesquisaVeiculo?montadora=chevrolet">  <img src="../img/4.png" id="item-4" alt="gm"/></a>
+                            <a href="pesquisaVeiculo?montadora=pegeout">    <img src="../img/5.png" id="item-5" alt="pegeout"/></a>
+                            <a href="pesquisaVeiculo?montadora=citroen">    <img src="../img/6.png" id="item-6" alt="citroen"/></a>
+                            <a href="pesquisaVeiculo?montadora=renault">    <img src="../img/7.png" id="item-7" alt="renault"/></a>
+                        </div>
+                        <div class="carousel-controls">
+                            <a class="prev-button" href="#" id="prev"> 
+                                <div class="icon">
+                                    <div class="pointerLeft"></div>
+                                </div>
+                            </a>
+                            <a class="next-button" href="#" id="next">
+                                <div class="icon">
+                                    <div class="pointerRight"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="btn-voltar">
+                    <div class="col-md-12">
+                        <a href="#div1" class="btn btn-default"> Voltar </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/jscarousel/jquery.waterwheelCarousel.js"></script>
+        <script type="text/javascript" src="../js/jscarousel/myScript.js"></script>
+    </body>
+</html>

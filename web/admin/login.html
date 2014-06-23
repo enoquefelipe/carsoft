@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modal</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/bootstrap-theme.css" type="text/css" />
+        <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="css/zone-style.css" type="text/css" />
+        <link rel="stylesheet" href="css/my.css" type="text/css" />
+    </head>
+    <body>
+
+        <div class="cl-mcont" >
+            <div class="row" id="form-login">
+                <div>
+                    <div class="block-flat">
+                        <div class="header">							
+                            <h3> Back-Office </h3>
+                        </div>
+                        <div class="content">
+
+                            <form method="POST" action="index.jsp"> 
+                                <div class="form-group">
+                                    <label> Usuário </label> 
+                                    <input type="text" name="usuario" placeholder="Usuário" class="form-control" required="">
+                                </div>
+                                <div class="form-group"> 
+                                    <label> Senha </label> 
+                                    <input type="password" name="senha" placeholder="Senha" class="form-control" required="">
+                                </div> 
+                                <div class="checkbox">
+                                    <label> <input type="checkbox"> Lembrar minha Senha </label> </div> 
+                                <button class="btn btn-primary" type="submit"> Entrar</button>
+                            </form>
+                            <a href="loginaction">Result </a>
+                        </div>
+                    </div>				
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="js/myScript.js"></script>
+
+    </body>
+</html>

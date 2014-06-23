@@ -1,0 +1,122 @@
+img{ /* tmanho da imagem do carro*/
+    width: 300px;
+}
+
+label { /* posição do label das cores */
+    display: inline-block;
+    position: relative;
+}
+
+label img { /* posição do abel da imagem do carro*/
+    position: absolute;
+    display: none;
+}
+
+.cores input:not(:checked) + label img { /* exibindo apenas a img do radio selecioado 10%;*/
+    display: none;
+}
+.cores input[type=radio] { /* escondendo o radio*/ 
+    display: none;
+}
+
+.cores-container img { /* escondendo as imagens não utilizadas*/
+    display: none;
+}
+
+.cores-container img:nth-child(1){
+    display: block;
+}
+
+.cores input:checked + label:after { /* borda  interna da caixa de cores */
+    border: 2px solid rgba(0,0,0,0.3);
+}
+
+.cores label:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cores label:after {
+    content: '';
+    display: block;
+    width:25px;
+    height: 25px;
+}
+
+/* inicio das cores */ 
+
+label[for=azul]:after {
+    background-color: #6666FF;
+}
+label[for=branco]:after {
+    background-color: white;
+    border: solid 1px  #000;
+}
+label[for=cinza]:after {
+    background-color: #808080;
+}
+label[for=prata]:after {
+    background-color: #C0C0C0;
+}
+label[for=preto]:after {
+    background-color: #000;
+}
+label[for=vermelho]:after {
+    background-color: #FF0000;
+}
+/* fim das cores */
+
+/* preço  */
+.preco{
+    font-weight: bold;
+    float: right;
+    margin: 0;
+}
+/* preço  */
+
+input[type=submit]{
+    /*float: right;*/
+
+    /*  
+        height: 30px;
+        background-color: yellowgreen;
+        background-color: #4b67a1;
+        color: white;
+        border: solid 1px #000;
+        font-weight: bold;
+    */
+}
+
+fieldset{
+    border: dotted 1px #000;
+    border-radius: 7px;
+    margin: 25px;
+}
+
+.formveiculo{
+    margin-top: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.formveiculo fieldset{
+    border: 1px dotted #888;
+    padding: 10px;
+}
+
+.bloco1{
+    display: inline-block;
+    width: 49%;
+    position: relative;
+  }
+.bloco2{
+    display: inline-block;
+    width: 49%;
+    position: relative;
+}
+
+#bloco{
+    display: block;
+    margin: 25px;
+
+  }

@@ -1,0 +1,28 @@
+.tabela-interessado{
+    width: 80%;
+    margin: auto;
+}
+
+.tabela-interessado th, td {
+    text-align: center;
+}
+
+.tabela-veiculo{
+    width: 80%;
+    margin: auto;
+}
+
+.tabela-veiculo th, td {
+    text-align: center;
+}
+
+.cadastro-colaborador{
+    width: 80%;
+    margin: auto; 
+}
+#form-login{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
